@@ -1,0 +1,263 @@
+@media (max-width: 1680px) {
+  .logo {
+    display: none;
+  }
+}
+
+@media (max-width: 1450px) {
+  .info_menu {
+    gap: 0;
+  }
+
+  .circle {
+    display: none;
+  }
+  .header_info {
+    justify-content: end;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .header_line {
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 5px;
+  }
+  .header_menu-mobile {
+    display: none;
+  }
+  .header_info {
+    padding: 0 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .header_main {
+    margin: -55px 60px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .header_info {
+    justify-content: space-between;
+    padding: 0 60px;
+    text-align: center;
+  }
+  .header_main {
+    margin: -100px 40px;
+  }
+
+  .header_line {
+    margin-bottom: 50px;
+  }
+  .search-container {
+    margin-right: 20px;
+  }
+  .mobile_line {
+    position: relative;
+    display: block;
+    z-index: 5;
+  }
+  /* mobile menu start */
+  .info_menu {
+    background: #222222;
+    position: absolute;
+    top: -200%;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    color: white;
+  }
+
+  .info_menu-list.active {
+    position: relative;
+    display: block;
+  }
+
+  .dropdown_menu {
+    padding: 0;
+  }
+  .dropdown_menu li:first-child {
+    color: #cff481;
+  }
+
+  .dropdown_menu.active {
+    display: block;
+    position: relative;
+    top: 0;
+    width: auto;
+    background-color: transparent;
+    box-shadow: none;
+    border-top: none;
+  }
+  .dropdown_menu.active li:last-child {
+    color: #cff481;
+  }
+
+  .dropdown_menu-right.active {
+    display: block;
+    flex-direction: column;
+  }
+
+  .info_menu-list-mobile {
+    display: block;
+  }
+
+  .info_menu-list.active span {
+    display: inline-block;
+    margin-left: 10px;
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+  }
+
+  .info_menu-list:hover .dropdown_menu,
+  .info_menu-list:hover .dropdown_menu-right {
+    display: none; /* Сховати підменю при ховері на мобільних */
+  }
+
+  /* Показувати підменю при натисканні */
+  .info_menu-list.active .dropdown_menu,
+  .info_menu-list.active .dropdown_menu-right {
+    display: block;
+  }
+
+  /* ./mobile menu end */
+  .logo {
+    display: block;
+  }
+
+  .header_main-cards {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 750px) {
+  .header_line {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .header_menu {
+    gap: 14px;
+  }
+  .menu_img {
+    margin-right: 5px;
+    width: 18px;
+    height: 18px;
+  }
+  .menu_list {
+    max-width: 107px;
+  }
+
+  .title {
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+  .subtitle {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .header_main-cards {
+    margin-top: 80px;
+  }
+  .header_main {
+    background-image: url(../img/Rectangle\ 10.svg);
+    margin: -100px 40px;
+  }
+
+  .search-input {
+    padding-left: 15px;
+    max-width: 50px;
+  }
+  .search-container {
+    margin-right: 16px;
+    width: 113px;
+  }
+
+  .header_main-card {
+    padding: 10px 0 0 0;
+    width: 110px;
+    height: 99px;
+  }
+  .header_main-card:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .card_text {
+    font-size: 14px;
+  }
+
+  .card_number {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 590px) {
+  .search-container {
+    width: 96px;
+    height: 50px;
+  }
+  .search-input {
+    max-width: 60px;
+    padding-left: 5px;
+    background: transparent;
+  }
+  .logo_img {
+    width: 114px;
+    height: 31px;
+  }
+  .header_info {
+    padding: 0 21px 0 50px;
+    margin-bottom: 20px;
+  }
+
+  .header_main-text {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 450px) {
+  .title {
+    padding-top: 170px;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 14px;
+  }
+  .subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .header_main {
+    width: 100%;
+    background-size: contain;
+    margin: -90px 15px;
+  }
+  .header_main-wrapper {
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 390px) {
+  .header_main-cards {
+    margin-top: 40px;
+  }
+
+  .button {
+    padding: 15px 30px;
+    margin: 135px 0px 0px 185px;
+    width: 144px;
+    border-radius: 20px 0 20px 0;
+  }
+  .header_line {
+    margin-bottom: 20px;
+  }
+}
